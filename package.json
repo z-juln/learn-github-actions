@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest --watch",
     "coverage": "jest --colors --coverage && jest-coverage-badges --output ./doc/assets",
-    "build": "npm run clean && rollup -c && yarn coverage",
+    "build": "npm run clean && yarn coverage",
     "clean": "rimraf ./dist && rimraf ./es && rimraf ./lib && rimraf ./coverage"
   },
   "repository": {
