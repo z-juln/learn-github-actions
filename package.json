@@ -1,0 +1,28 @@
+{
+  "name": "learn-github-actions",
+  "version": "1.0.0",
+  "description": "学习 github actions",
+  "main": "jest.config.js",
+  "scripts": {
+    "test": "jest --watch",
+    "coverage": "jest --colors --coverage && jest-coverage-badges --output ./doc/assets",
+    "build": "npm run clean && rollup -c && yarn coverage",
+    "clean": "rimraf ./dist && rimraf ./es && rimraf ./lib && rimraf ./coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/z-juln/learn-github-actions.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/z-juln/learn-github-actions/issues"
+  },
+  "homepage": "https://github.com/z-juln/learn-github-actions#readme",
+  "devDependencies": {
+    "jest": "^28.1.0",
+    "jest-coverage-badges": "^1.1.2",
+    "rimraf": "^3.0.2"
+  }
+}
