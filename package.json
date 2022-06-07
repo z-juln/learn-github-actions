@@ -20,7 +20,7 @@
     "url": "https://github.com/z-juln/learn-github-actions/issues"
   },
   "publishConfig": {
-    "@juln:registry": "https://npm.pkg.github.com"
+    "@z-juln:registry": "https://npm.pkg.github.com"
   },
   "homepage": "https://github.com/z-juln/learn-github-actions#readme",
   "devDependencies": {
