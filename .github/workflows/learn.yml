@@ -6,3 +6,5 @@ jobs:
     steps:
       - run: echo has-github-token
         if: ${{ secrets.GITHUB_TOKEN }}
+      - run: echo has-npm-token
+        if: ${{ secrets.NPM_TOKEN }}
