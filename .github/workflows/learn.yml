@@ -4,4 +4,5 @@ jobs:
   print-has-github-token:
     runs-on: macos-latest
     steps:
-      - run: echo ${{ secrets.GITHUB_TOKEN }}
+      - run: echo has-github-token
+        if: ${{ secrets.GITHUB_TOKEN }}
