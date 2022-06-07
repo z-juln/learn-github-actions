@@ -13,11 +13,10 @@ jobs:
           node-version: 14
           registry-url: https://registry.npmjs.org
 
-      - run:  |
-          npm config set //registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN
-          echo who am i:
-          npm who am i
-          npm publish
+      # - run:  |
+      #     npm config set //registry.npmjs.org/:_authToken=$NODE_AUTH_TOKEN
+      #     npm publish
+      - run:  npm publish
         env:
           CI: true
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
