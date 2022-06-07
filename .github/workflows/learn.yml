@@ -4,7 +4,5 @@ jobs:
   print-has-github-token:
     runs-on: macos-latest
     steps:
-      - run: echo has-github-token
-        if: ${{ secrets.GITHUB_TOKEN }}
-      - run: echo has-npm-token
-        if: ${{ secrets.NPM_TOKEN }}
+      - run: echo has-github-token-${{ secrets.GITHUB_TOKEN }}
+      - run: echo has-npm-token-${{ secrets.NPM_TOKEN }}
