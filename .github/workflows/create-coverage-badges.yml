@@ -1,4 +1,4 @@
-name: test
+name: create-coverage-badges
 on: [push]
 jobs:
   create-coverage-badges:
