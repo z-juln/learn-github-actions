@@ -1,0 +1,7 @@
+name: learn
+on: [push]
+jobs:
+  print-has-github-token:
+    runs-on: macos-latest
+    steps:
+      - run: echo ${{ secrets.GITHUB_TOKEN }}
