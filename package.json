@@ -1,5 +1,5 @@
 {
-  "name": "juln-learn-github-actions",
+  "name": "@juln/learn-github-actions",
   "version": "2.0.0",
   "description": "学习 github actions",
   "main": "src/index.js",
@@ -20,7 +20,7 @@
     "url": "https://github.com/z-juln/learn-github-actions/issues"
   },
   "publishConfig": {
-    "@z-juln:registry": "https://npm.pkg.github.com"
+    "@juln:registry": "https://npm.pkg.github.com"
   },
   "homepage": "https://github.com/z-juln/learn-github-actions#readme",
   "devDependencies": {
